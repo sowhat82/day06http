@@ -1,0 +1,17 @@
+<h1>Alvin's Weather App</h1>
+
+<form [formGroup]="cityForm" (ngSubmit) = "getWeather()">
+    City: <input type="text" formControlName="city">
+    <button type="submit">
+    Get
+    </button>
+</form>
+<br><br>
+
+<h3>
+    Temp: {{result.main.temp}} F<br> 
+    Pressure: {{result.main.pressure}} Pa<br> 
+    Humidity: {{result.main.humidity}}      
+</h3>
+
+
